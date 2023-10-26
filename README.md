@@ -1,6 +1,10 @@
 # Slack App: Component Mention Counts 🔥
 A Slack App feature that helps users determine how often a component/element/word was mentioned within Slack messages. The feature provides the user with a number count of the times a specific component is mentioned and referenced. 
 
+The project starts off by creating a new [Slack App](https://api.slack.com/automation/create) and workspace to build my app. I chose to create a new workspace! Within the application, scopes were used to give the new app permission to do things. Under the **OAuth & Permissions** tab in the sidebar, add scopes to the app. The scopes that will be necessary include: 
+* `channels:read`: This scope allows the app to retrieve a list of all the public channels in a workspace in order to pick one to retrieve a message from.
+* `channels:history`: This scope lets the app view all the messages within any public channel in a workspace.
+
 https://github.com/debbieyuen/slack-app-mentions/assets/31296177/561341d2-7fbb-44fb-be9e-8d0d17b4a0b3
 
 ## Requirements

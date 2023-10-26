@@ -15,6 +15,32 @@ https://github.com/debbieyuen/slack-app-mentions/assets/31296177/561341d2-7fbb-4
 * Slack Signing Secret key
 * Bot User OAuth Access Token
 
+## Python-Slack
+
+In the root directory, create a **requirements.txt** file and add the following contents to the file.
+```
+slack_sdk>=3.0
+slack_bolt>=1.6.1
+certifi
+```
+Install the dependencies by running the following command from terminal. 
+```bash
+$ pip3 install -r requirements.txt
+```
+
+Use Certifi's functions to locate installed certificate authority (CA) bundles.
+```Python
+import ssl as ssl_lib
+import certifi
+
+ssl_context = ssl_lib.create_default_context(cafile=certifi.where())
+```
+
+## Slack API
+
+<img width="1280" alt="Screenshot 2023-10-26 at 3 31 02 AM" src="https://github.com/debbieyuen/slack-app-mentions/assets/31296177/355ff60f-ad8b-4655-b7ed-41d73f7f621f">
+
+
 ## Set Up
 
 Clone the repository

@@ -37,6 +37,7 @@ ssl_context = ssl_lib.create_default_context(cafile=certifi.where())
 ```
 
 ## Slack API
+The [Slack Conversations API](https://api.slack.com/docs/conversations-api) provided access to channel-like things within Slack including public and private channels and messages. Using the [conversations_history](https://api.slack.com/methods/conversations.history) method, I was able to find all the messages. From there, the text was converted into strings and stored in an array with single-word strings. 
 
 <img width="1280" alt="Screenshot 2023-10-26 at 3 31 02 AM" src="https://github.com/debbieyuen/slack-app-mentions/assets/31296177/355ff60f-ad8b-4655-b7ed-41d73f7f621f">
 

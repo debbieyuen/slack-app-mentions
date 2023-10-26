@@ -14,5 +14,11 @@ export default Manifest({
   workflows: [SubmitIssueWorkflow],
   functions: [PostIssueMessage],
   outgoingDomains: [],
-  botScopes: ["commands", "chat:write", "chat:write.public"],
+  botScopes: [
+    "commands",
+    "chat:write",
+    "chat:write.public",
+    "channels:read",
+    "channels:history",
+  ],
 });

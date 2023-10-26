@@ -30,12 +30,33 @@ $ slack login
 $ slack auth list
 ```
 
-Install Slack CLI (Mac)
+Retrieve your **Bot User OAuth Access Token** for your app from the [app management page](https://api.slack.com/apps). In your terminal, add your token to your environment variables.
+
 ```bash
-$ 
+$ export SLACK_BOT_TOKEN='xoxb-XXXXXXXXXXXX-xxxxxxxxxxxx-XXXXXXXXXXXXXXXXXXXXXXXX'
 ```
+<img width="1280" alt="Screenshot 2023-10-26 at 2 57 37 AM" src="https://github.com/debbieyuen/slack-app-mentions/assets/31296177/987ea01d-b587-478d-a482-45d7e5530e14">
+
+Retrieve your **Slack Signing Secret** key for your app from the [app management page](https://api.slack.com/apps). In your terminal, run the following command. 
+
+```bash
+$ export SLACK_SIGNING_SECRET='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+```
+<img width="631" alt="Screenshot 2023-10-26 at 3 01 21 AM" src="https://github.com/debbieyuen/slack-app-mentions/assets/31296177/61d43a85-5fc8-4216-9543-8b101b483f20">
+
+Run the python file
+```bash
+$ python3 bot.py
+```
+
+On the [app management page](https://api.slack.com/apps), install the DebBot app in your workspace. Then, in Slack add the DeBot app to the `#general` channel.
+
+<img width="1280" alt="Screenshot 2023-10-26 at 3 06 19 AM" src="https://github.com/debbieyuen/slack-app-mentions/assets/31296177/b6977381-5489-4bf4-9660-3992fa9d1cdc">
 
 ## Credits and References
 * [Python Slack SDK Documentation](https://github.com/slackapi/python-slack-sdk)
 * @karishay's [PythOnBoardingBot](https://github.com/slackapi/python-slack-sdk/tree/main/tutorial) tutorial
 * [The New Slack Platform](https://www.youtube.com/playlist?list=PLWlXaxtQ7fUYi7HPZMi0fUU7YbYZXemsp) YouTube series
+* [Slack: Retrieving Messages](https://api.slack.com/messaging/retrieving)
+* [Slack: Conversations API](https://api.slack.com/docs/conversations-api)
+* [Slack: Using the Slack Web API](https://api.slack.com/web)
